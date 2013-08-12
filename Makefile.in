@@ -414,7 +414,7 @@ MKINSTDIRS      = @abs_srcdir@/Tools/config/install-sh -m 0755 -d
 # Use standard autoconf approach to transform executable name using --program-prefix and --program-suffix
 transform	= @program_transform_name@
 
-install: install-main install-lib install-ccache
+install: install-main install-lib
 	@echo "Installation complete"
 
 install-main:
