@@ -2373,7 +2373,7 @@ public:
       }
     } else {
       // Normal function call
-      Printf(function_code, " %s\n\n", tm ? (const String *) tm : empty_string);
+      Printf(function_code, " %s\n\n", tm ? ((const String *) tm) : empty_string);
       Printv(proxy_class_code, function_code, NIL);
     }
 
@@ -2932,7 +2932,7 @@ public:
       }
     } else {
       // Normal function call
-      Printf(function_code, " %s\n\n", tm ? (const String *) tm : empty_string);
+      Printf(function_code, " %s\n\n", tm ? ((const String *) tm) : empty_string);
       Printv(module_class_code, function_code, NIL);
     }
 

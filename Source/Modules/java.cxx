@@ -2447,7 +2447,7 @@ public:
     }
 
     generateThrowsClause(n, function_code);
-    Printf(function_code, " %s\n\n", tm ? (const String *) tm : empty_string);
+    Printf(function_code, " %s\n\n", tm ? ((const String *) tm) : empty_string);
     Printv(proxy_class_code, function_code, NIL);
 
     Delete(pre_code);
@@ -2923,7 +2923,7 @@ public:
     }
 
     generateThrowsClause(n, function_code);
-    Printf(function_code, " %s\n\n", tm ? (const String *) tm : empty_string);
+    Printf(function_code, " %s\n\n", tm ? ((const String *) tm) : empty_string);
     Printv(module_class_code, function_code, NIL);
 
     Delete(pre_code);

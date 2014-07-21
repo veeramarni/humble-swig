@@ -3105,7 +3105,7 @@ private:
 
     // The whole function code is now stored in tm (if there was a matching
     // type map, of course), so simply append it to the code buffer.
-    Printf(function_code, "%s\n", tm ? (const String *) tm : empty_string);
+    Printf(function_code, "%s\n", tm ? ((const String *) tm) : empty_string);
     Printv(proxyCodeBuffer(getNSpace()), function_code, NIL);
 
     Delete(pre_code);

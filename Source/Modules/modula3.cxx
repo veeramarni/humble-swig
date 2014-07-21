@@ -2787,7 +2787,7 @@ MODULA3():
     }
 
     generateThrowsClause(throws_hash, function_code);
-    Printf(function_code, " %s\n\n", tm ? (const String *) tm : empty_string);
+    Printf(function_code, " %s\n\n", tm ? ((const String *) tm) : empty_string);
 
     if (proxy_flag && wrapping_member_flag && !enum_constant_flag) {
       // Properties
