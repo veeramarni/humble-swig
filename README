@@ -65,7 +65,8 @@ to be used instead. And if you don't have PCRE at all, the configure script
 will provide instructions for obtaining it.
 
 To build and install SWIG, simply type the following:
-
+cd humble-swig
+     % ./autogen.sh
      % ./configure
      % make
      % make install
